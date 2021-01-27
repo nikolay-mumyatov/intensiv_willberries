@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Willberries</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet"/> <!-- Загрузка шрифта Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"> <!-- Загрузка шрифта Roboto Slab -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" /> <!-- Подключение Bootstrap -->
+    <link rel="stylesheet" href="css/style.css" /> <!-- Подключение своих стилей -->
   </head>
   <body>
     <header class="container">
@@ -54,5 +52,41 @@
       <!-- /.row -->
     </header>
     <!-- /.container -->
+    <main class="slider">
+      <section class="slide slide-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 offset-lg-1">
+              <span class="lebel">Bestseller</span>
+              <h2 class="slide-title">Sweater Choker Neck </h2>
+              <p class="slide-description">Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.</p>
+              <button class="button">
+                <span class="button-icon slide-price">$319</span>
+                <span class="button-tex">Shop now</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.slide -->
+      <div class="slider-nav">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-1">
+              <button class="slide-button">
+                <img src="/Image/Arrow-prev.svg" alt="arrow: prev">
+              </button>
+            </div>
+            <div class="col-1">
+              <button class="slide-button">
+                <img src="/Image/Arrow-next.svg" alt="arrow: next">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.slider-nav -->
+    </main>
+    <!-- /.slider -->
   </body>
 </html>

@@ -1,3 +1,9 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
 .menu {
   list-style: none;
   padding: 0;
@@ -5,7 +11,6 @@
 
 .menu-link {
   text-decoration: none;
-  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -34,4 +39,61 @@
 
 .button-icon {
   margin-right: 10px;
+}
+
+/* Блок слайдера */
+
+.slider{
+  position: relative;
+}
+
+.slide {
+  padding-top: 90px;
+  padding-bottom: 110px;
+}
+
+.slide-1 {
+  background: #b4d1e0 url(../Image/slide-1.png) no-repeat top right 30%;
+}
+
+.lebel {
+  background: #3dc47e;
+  border-radius: 3px;
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 12px;
+}
+
+.slide-title {
+  color: #262d33;
+  font-size: 55px;
+  line-height: 70px;
+  font-family: Roboto Slab, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.slide-description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #4b5157;
+  max-width: 335px;
+  margin-bottom: 40px;
+}
+
+.slider-nav{
+  position: absolute;
+  top: 50%;
+  width: 100%;transform: translateY(-50%);
+}
+
+.slide-button{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+.slide-button:hover{
+  opacity: 0.8;
 }
