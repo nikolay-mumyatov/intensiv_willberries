@@ -1,12 +1,21 @@
-body {
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
   font-family: "Lato", sans-serif;
+}
+
+.header {
+  padding: 15px 0;
 }
 
 .menu {
   list-style: none;
   padding: 0;
+  /* margin: 0; */
 }
 
 .menu-link {
@@ -41,9 +50,14 @@ body {
   margin-right: 10px;
 }
 
+.button-icon:last-child {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
 /* Блок слайдера */
 
-.slider{
+.slider {
   position: relative;
 }
 
@@ -68,7 +82,7 @@ body {
   color: #262d33;
   font-size: 55px;
   line-height: 70px;
-  font-family: Roboto Slab, sans-serif;
+  font-family: "Roboto Slab", serif;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -81,19 +95,106 @@ body {
   margin-bottom: 40px;
 }
 
-.slider-nav{
+.slider-nav {
   position: absolute;
   top: 50%;
-  width: 100%;transform: translateY(-50%);
+  width: 100%;
+  transform: translateY(-50%);
 }
 
-.slide-button{
+.slide-button {
   border: none;
   cursor: pointer;
   background-color: transparent;
   opacity: 0.5;
 }
 
-.slide-button:hover{
+.slide-button:hover {
   opacity: 0.8;
+}
+
+/* Блок с карточками */
+
+.card {
+  min-height: 370px;
+}
+
+.card-1 {
+  background: #e3e2e3 url(../Image/1-card.png) no-repeat top right;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 60px 46px 80px 46px;
+}
+
+.card-2 {
+  background: #e3e2e3 url(../Image/2-card.png) no-repeat top right;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 60px 46px 80px 46px;
+}
+
+.card-3 {
+  background: #ccd5e6 url(../Image/3-card.png) no-repeat top right 15%;
+  background-size: contain;
+  border-radius: 10px;
+  padding: 35px 46px 60px 46px;
+}
+
+.card-4 {
+  background: #ff4f52 url(../Image/4-card.png) no-repeat top right;
+  background-size: contain;
+  border-radius: 10px;
+  padding-top: 35px;
+  padding-left: 25px;
+}
+
+.card-title {
+  color: #262d33;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "Roboto Slab", serif;
+  max-width: 222px;
+}
+
+.card-title__white {
+  color: #fff;
+}
+
+.card-title.large {
+  font-size: 40px;
+  line-height: 50px;
+  max-width: 420px;
+  color: #262d33;
+}
+
+.card-text {
+  color: #4b5157;
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 175px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.card-text.large{
+  max-width: 320px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.card-text__white {
+  color: #fff;
+  opacity: 0.85;
+}
+
+.lebel-card {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.card-price-text {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
 }
