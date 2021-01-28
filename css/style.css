@@ -176,7 +176,7 @@ body {
   margin-bottom: 25px;
 }
 
-.card-text.large{
+.card-text.large {
   max-width: 320px;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -197,4 +197,113 @@ body {
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
+}
+
+/* Блок с товарами */
+
+.section-title {
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "Roboto Slab", serif;
+  color: #262d33;
+}
+
+.more {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #262d33;
+  padding: 10px;
+}
+
+.goods-card {
+  position: relative;
+  text-align: center;
+  padding: 30px 35px 35px 35px;
+}
+
+.goods-card .lebel {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.goods-title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  line-height: 25px;
+  color: #262d33;
+}
+
+.goods-description {
+  color: #4b5157;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.goods-price {
+  font-size: 18px;
+  line-height: 30px;
+  color: #262d33;
+  font-weight: 700;
+}
+
+/* Футер страницы */
+
+.footer {
+  background: #8f79d4;
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+.footer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer-menu-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-text {
+  color: #e7d9ff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.social-link {
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.footer-line {
+  color: #fff;
+  opacity: 0.5;
+  size: 1px;
+}
+
+.footer-btn {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.payment-logo{
+  vertical-align: middle;
+  margin-right: 25px;
 }
