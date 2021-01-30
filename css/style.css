@@ -35,15 +35,20 @@ body {
   border-radius: 20px;
   color: #fff;
   border: none;
-  display: flex;
-  align-items: center;
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  display: flex;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  max-width: 150px;
+  vertical-align: middle;
+}
+
+.button.small{
+  max-width: 120px;
 }
 
 .button-icon {
@@ -64,10 +69,19 @@ body {
 .slide {
   padding-top: 90px;
   padding-bottom: 110px;
+  min-height: 568px;
 }
 
 .slide-1 {
   background: #b4d1e0 url(../Image/slide-1.png) no-repeat top right 30%;
+}
+
+.slide-2 {
+  background: #9fe6c4 url(../Image/slide-1.png) no-repeat top right 30%;
+}
+
+.slide-3 {
+  background: #e9b0da url(../Image/slide-1.png) no-repeat top right 30%;
 }
 
 .lebel {
@@ -100,6 +114,7 @@ body {
   top: 50%;
   width: 100%;
   transform: translateY(-50%);
+  z-index: 9;
 }
 
 .slide-button {
@@ -119,15 +134,20 @@ body {
   min-height: 370px;
 }
 
+.goods-card{
+  text-decoration: none;
+  display: block;
+}
+
 .card-1 {
-  background: #e3e2e3 url(../Image/1-card.png) no-repeat top right;
+  background: #e3e3e3 url(../Image/1-card.png) no-repeat top right;
   background-size: cover;
   border-radius: 10px;
   padding: 60px 46px 80px 46px;
 }
 
 .card-2 {
-  background: #e3e2e3 url(../Image/2-card.png) no-repeat top right;
+  background: #1d221f url(../Image/2-card.png) no-repeat top right;
   background-size: cover;
   border-radius: 10px;
   padding: 60px 46px 80px 46px;
@@ -303,7 +323,59 @@ body {
   margin-right: 15px;
 }
 
-.payment-logo{
+.payment-logo {
   vertical-align: middle;
   margin-right: 25px;
+}
+
+/* Медиа запросы */
+
+@media (max-width: 1200px) {
+  .slide {
+    background-size: cover;
+    max-height: 590px;
+  }
+}
+
+@media (max-width: 992px) {
+  .slider-nav {
+    display: none;
+  }
+
+  .card-3 {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  .slide-title {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+
+  .card {
+    background-position: left top;
+    min-height: 300px;
+  }
+
+  .card-4 {
+    background-position: right top;
+  }
+
+  .card-title.large {
+    font-size: 30px;
+  }
+
+  .footer-menu-item{
+    text-align: center;
+  }
+
+  .footer-menu-item:not(:last-child) {
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .footer-menu-link{
+    font-size: 16px;
+  }
 }
